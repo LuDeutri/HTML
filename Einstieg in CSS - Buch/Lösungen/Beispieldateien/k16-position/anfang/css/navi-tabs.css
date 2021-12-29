@@ -1,0 +1,63 @@
+/* =====================================================
+
+   Stylesheet für die Beispielsite aus "Einstieg in CSS"
+
+   Datei: navi-tabs.css
+   Datum: ...
+   Autor: ...
+
+========================================================== */
+
+@media screen {
+
+  #navibereich { 
+    text-align: right;        
+    color: black;
+    background-color: #f3c600;
+    padding: 5px 20px 4px 20px;
+    border-bottom: 1px solid #8c8c8c; 
+  }  
+    
+  ul.navmain { 
+    margin: 0; 
+  }
+  
+  ul.navmain li {
+    display: inline;        
+    list-style-type: none;  
+    margin: 0; 
+  }
+  
+  ul.navmain a { 
+    color: black; 
+    background-color: #ffeda0;
+    padding: 4px 8px;
+    border: 1px solid #8c8c8c;
+   /* border-radius: 8px 8px 0 0 ; */
+  }
+  ul.navmain .sie-sind-hier {
+    text-decoration: none; 
+    color: black;
+    background-color: white;
+    border-bottom-color: white;
+  }
+
+
+  ul.navmain a:hover, 
+  ul.navmain a:focus {
+    text-decoration: none; 
+    color: black;
+    background-color: white;
+    border-bottom-color: white; 
+    /* outline: 0; */
+  }
+  ul.navmain a:active {
+    background-color: white; 
+    color: #d90000; 
+  }
+  
+} /* Ende @media – nicht löschen! */
+
+/* ======================================
+   E N D E  
+====================================== */

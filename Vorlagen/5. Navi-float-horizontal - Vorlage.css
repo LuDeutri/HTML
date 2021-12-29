@@ -1,0 +1,72 @@
+/*==================================================================================================================================
+ Stylesheet für die Navigationsleiste von .............
+ Datei: Navi-floats-horizontal.css
+ Datum: .. .. ..
+ Autor: .......
+===================================================================================================================================*/
+
+/*Bild-datei "navi-sprite.jpg" muss sich im selben Ordner befinden, oder eigenes Sprite erstellen!*/
+
+
+@media screen{
+	
+/*Schritt 1 Navibereich gestalten */
+
+div#navibereich{
+	 overflow:hidden;
+	 background: #f3c600 url("navi-sprite.jpg") repeat-x left top;
+	 padding: 0;
+	 padding-left: 20px;
+	 margin:0;
+}
+
+div#navibereich ul{
+	 padding: 0;
+	 margin: 0;
+}
+
+div#navibereich li{
+	 float: left;
+	 width: auto;
+	 list-style: none;
+	 line-height: 1;
+	 padding: 0;
+	 margin: 0;
+}
+
+/*Schritt 2 Hyperlinks gestalten*/
+
+div#navibereich a{
+	 color: #000000;
+	 display: block;
+	 padding: 7px 13px 7px 10px;
+	 text-decoration: none;
+}
+
+/*Schritt 3 Linkzustände gestalten*/
+
+div#navibereich li.sie-sind-hier a{
+	 background: #ffeda0 url("navi-sprite.jpg") repeat-x left -60px;
+	 color: black;
+	 font-weight: normal;
+	 text-decoration: none;
+}
+	
+div#navibereich zl a:hover,
+div#navibereich ul a:focus{
+	 background: #428474 url("navi-sprite.jpg") repeat-x left -30px;
+	 border-bottom: none;
+	 color: black;
+	 text-decoration: underline;
+}
+
+div#navibereich ul a:active{
+	 background: #b80000;
+	 color: white;
+}
+
+} /* Ende @media*/
+
+/*==================================================================================================================================
+E N D E Navi-floats-horizontal.css
+==================================================================================================================================*/

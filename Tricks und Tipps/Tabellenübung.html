@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html=lang="de">
+
+<head> 
+     <meta charset="utf-8">
+	 <title> Tabellenübung </title>
+	 <meta name="Tabellenübung" content="Hier erstelle ich eine Tabelle">
+	
+	 <style>
+	     body{
+		     font-family: Verdana, Arial, Helvetica, sans-serif;
+			 font-size: 87,5%;
+		 }
+		 table{
+		     background-color:black;
+			 border-spacing: 5px;
+			 border-collapse: collapse;
+		 }
+	     		 
+		 thead{ background-color: #f3c600;}
+		 
+		 tbody{ background-color: #ffeb91;}
+		 
+		 tbody tr:hover{ background-color: #fff6cc;}
+		 
+		 tfoot{
+		     background-color: #fff6cc;
+			 font-size: 85,71%;
+			 border-top: 1px solid #f3c600;
+			 border-bottom: 1px solid #f3c600;
+		 }
+		 
+		 th, td{
+		     padding: 5px;
+			 text-align: left;
+			 vertical-align: top;
+		 }
+	 </style>
+	 <!-- table{   background color scheint in den Zwischenräumen der Zellen durch, border spacing bestimmt die Größe der Zwischenräume, border-collapse entfernt alle Zwischenräume zwischen den Zellen-->
+</head>
+<body>
+     <div id="wrapper">
+	 
+	     <div id="kopfbereich">
+		     <h1> Tabellenübung</h1>
+		 </div> <!-- Ende Kopfbereich -->
+		 
+		 <div id="navibereich">
+		     
+		 </div> <!-- Ende Navibereich -->
+		 
+		 <div id="textbereich">
+		     <table>
+			     <thead>
+				     <tr>
+				         <th>Nr.</th>
+						 <th>Titel</th>
+						 <th>Erstausstrahlung</th>
+					 </tr>
+                 </thead>
+				 
+				 <tbody>
+					 <tr>
+					     <td>1.</td>
+						 <td>Jim Knopf und Lukas der Lokomotivführer</td>
+						 <td>1961</td>
+					 </tr>
+					 <tr>
+					     <td>2.</td>
+						 <td>Jim Knop und die Wilde 13</td>
+						 <td>1962</td>
+					 </tr>
+					 <tr>
+					     <td>3.</td>
+						 <td>Kater Mikesch</td>
+						 <td>1964</td>
+					 </tr>
+					 <tr>
+					     <td>4.</td>
+						 <td>Der Löwe ist los</td>
+						 <td>1965</td>
+					 </tr>
+					 <tr>
+					     <td>5.</td>
+						 <td>Kommt ein Löwe geflogen</td>
+						 <td>1966</td>
+					 </tr>
+					 <tr>
+					     <td>6.</td>
+						 <td>Gut gebrüllt, Löwe</td>
+						 <td>1967</td>
+					 </tr>
+					 <tr>
+					     <td>7.</td>
+						 <td>Bill Bo und seine Kumpane</td>
+						 <td>1969</td>
+					 </tr>
+					 <tr>
+					     <td>8.</td>
+						 <td>Umel aus dem Eis</td>
+						 <td>1969</td>
+					 </tr>
+					 <tr>
+					     <td>9.</td>
+					     <td>Kleiner König Kalle Wirsch</td>
+						 <td>1970</td>
+					 </tr>
+				 </tbody>
+				 
+				 <tfoot>
+				     <tr>
+					     <td colspan="3">Zum Teil wurden die Stücke in den 70er Jahren neu aufgelegt</td>
+				     </tr>
+				</tfoot>
+			 </table>
+		 
+		 </div> <!-- Ende Textbereich-->
+		 
+		 <div id="fußbereich">
+		 
+		 </div> <!-- Ende Fußbereich-->
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head> 
+  <meta charset="utf-8">
+  <title>Die Galerie – Little Boxes (Webseiten gestalten mit HTML und CSS)</title>
+  <meta name="description" content="Little Boxes führt Sie durch das Labyrinth von HTML und CSS, von den ersten Schritten bis zur professionell gestalteten Webseite.">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link href="favicon.ico" rel="shortcut icon">
+  <link href="css/zentrale.css" rel="stylesheet">
+
+  <!-- jQuery direkt aus dem Web laden --> 
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  
+  <!-- DoubleTapToGo laden --> 
+  <script src="js/doubletaptogo.min.js"></script>
+
+  <!-- DoubleTapToGo nur für li-Elemente mit Untermenü ausführen --> 
+  <script>
+  $( function()
+      { 
+          $( '#navibereich li:has(ul)' ).doubleTapToGo();
+      });
+  </script>
+  
+</head>
+
+<body>
+<div id="wrapper">
+
+<header id="kopfbereich">
+  <h1><img src="bilder/little-boxes-logo.gif" 
+           srcset="bilder/little-boxes-logo-2x.gif 2x"
+           class="logo" 
+           alt="Little Boxes" 
+           width="222" 
+           height="32"></h1>
+  <p class="slogan">Webseiten gestalten mit HTML und CSS. <span>Grundlagen.</span></p>
+</header> 
+
+<nav id="navibereich" class="cf">
+  <h2>Navigation</h2>
+  <ul class="navmain level1">
+    <li><a href="index.html">Startseite</a></li>
+    <li><a href="hobbys.html">Hobbys</a>
+      <ul class="level2">
+        <li><a href="#">Webdesign</a></li>
+        <li><a href="#">Fotografie</a></li>
+        <li><a href="#">Musik</a></li>
+      </ul>
+    </li>
+    <li><a href="galerie.html" class="sie-sind-hier">Galerie</a></li>
+    <li><a href="kontakt.html">Kontakt</a></li>
+  </ul>
+  <form class="suchformular" action="#">
+    <label for="suchfeld">Diese Site durchsuchen: </label>
+    <input type="text" 
+           name="suchfeld" 
+           id="suchfeld" 
+           size="10" 
+           maxlength="60">
+    <input type="image" 
+           alt="Suchen" 
+           class="lupe" 
+           src="bilder/lupe.png">
+  </form>
+</nav> 
+
+<main id="inhaltsbereich">
+
+<h2>Die Galerie</h2>
+
+<div class="galerie cf">
+  <img src="bilder/landschaft01.jpg" 
+       srcset="bilder/landschaft01-2x.jpg 2x"
+       width="200" 
+       height="150"
+       alt="Foto - Bretagne - Cap Fréhel">
+  <h3>Landschaftsbild 01</h3>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+     Suspendisse egestas ultricies pede...</p>
+</div> <!-- Ende .galerie -->
+
+<div class="galerie cf">
+  <img src="bilder/landschaft02.jpg" 
+       srcset="bilder/landschaft01-2x.jpg 2x"
+       width="200" 
+       height="150"
+       alt="Foto - Bretagne - Pointe du Van">
+  <h3>Landschaftsbild 02</h3>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+     Suspendisse egestas ultricies pede</p>
+</div> <!-- Ende .galerie -->
+
+<p class="clearing">Alle Fotos sind von mir. </p>
+
+ 
+</main> 
+
+<footer id="fussbereich">
+  <address>
+  Little Boxes &bull; Kästchenweg 12 &bull; 01234 Boxberg
+  <br>
+  Tel: 01234 567890 &bull; Fax: 01234 567891
+  </address>
+</footer> 
+
+</div> <!-- Ende wrapper -->
+
+<script>
+$(document).ready(function($) {      
+  
+  //test for touch events support and if not supported, attach .no-touch class to the HTML tag.
+  if (!("ontouchstart" in document.documentElement)) {
+    document.documentElement.className += " no-touch";
+  }
+
+}); 
+</script>
+  
+</body>
+</html>

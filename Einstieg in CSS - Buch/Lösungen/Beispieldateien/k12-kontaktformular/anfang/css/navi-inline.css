@@ -1,0 +1,41 @@
+/* =====================================================
+
+   Stylesheet für die Beispielsite aus "Einstieg in CSS"
+
+   Datei: navi-inline.css
+   Datum: ...
+   Autor: ...
+
+========================================================== */
+
+@media screen {
+
+  nav#navibereich { 
+    background-color: #ffeda0;
+    padding: 5px 20px; 
+  }  
+  
+  ul.navmain { margin: 0; }
+  
+  ul.navmain li {
+    display: inline;        
+    list-style-type: none;  
+    margin: 0 10px 0 0; 
+  }
+  
+  ul.navmain a { color: black; }
+
+  ul.navmain a:hover, 
+  ul.navmain a:focus {
+    text-decoration: underline; 
+  }
+  ul.navmain a:active {
+    background-color: transparent; 
+    color: #d90000; 
+  }
+  
+} /* Ende @media – nicht löschen! */
+
+/* ======================================
+   E N D E  
+====================================== */

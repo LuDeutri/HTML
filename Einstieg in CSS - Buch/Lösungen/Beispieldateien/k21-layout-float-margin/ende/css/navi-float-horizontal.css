@@ -1,0 +1,72 @@
+/* =====================================================
+
+   Stylesheet für die Beispielsite aus "Einstieg in CSS"
+
+   Datei: navi-float-horizontal.css
+   Datum: ...
+   Autor: ...
+
+========================================================== */
+
+@media screen and (max-width: 767px) {
+
+  /* Schritt 1 Navibereich gestalten */
+
+  #navibereich {
+    overflow:hidden;
+    background: #fee05a;
+    background-image: linear-gradient(#fee05a, #f3c600);
+    padding: 0;
+    padding-left: 20px;
+    margin: 0;
+  }
+  ul.navmain {
+    padding: 0;
+    margin: 0;
+  }
+  ul.navmain li {
+    float: left;
+    width: auto;
+    list-style: none;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Schritt 2 Hyperlinks gestalten */
+
+  ul.navmain a {
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    padding: 7px 13px 7px 10px;
+  }
+
+  /* Schritt 3 Linkzustände gestalten */
+
+  ul.navmain a.sie-sind-hier {
+    background: #ffeda0;
+    background-image: linear-gradient(#f7d337, #fff2c1);
+    color: black;
+    font-weight: normal;
+    text-decoration: none;
+  }
+
+  ul.navmain a:hover,
+  ul.navmain a:focus {
+    background: #f3c600;
+    background-image: linear-gradient(#f7d337, #fff2c1); 
+    color: black;
+    text-decoration: underline;
+  }
+  ul.navmain a:active {
+    background: #b80000;
+    color: white;
+  }
+  
+  
+} /* Ende @media – nicht löschen! */
+
+/* ======================================
+   E N D E  
+====================================== */

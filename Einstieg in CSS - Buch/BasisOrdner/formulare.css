@@ -1,0 +1,55 @@
+/*==================================================================================================================
+Stylesheet für die Beispielseite aus "Einstieg in CSS"
+Datei: formulare.css
+Datum 27.09.16
+Autor: Luca Deutrich
+==================================================================================================================*/
+
+@media screen{
+	
+	 form{
+		 background-color: #eee;
+		 /* width: 440px; */
+		 padding: 1em;
+		 margin-bottom: 2em;
+		 /* line-height: 1,2; */
+	 }
+	 
+	 form > div{ margin-bottom: 1em;}
+	 
+	 label{
+		 display: inline-block;   /*Beschriftung auf eigener Zeile*/
+		 cursor: pointer;  /*Mauszeiger wird zur Hand*/
+		 margin-bottom: 0,25em;
+		 width: 125px;
+		 text-align:right;
+	 }
+	 
+	 input[type="text"],
+	 input[type="email"],
+	 textarea{
+		 width: 80%;
+		 padding: 0,25em;
+		 margin-bottom: 1em;
+	 }
+	 
+	 textarea{
+		 max-width: 100%;
+		 min-height: 7em;
+	 }
+	 
+	 input:focus,
+	 textarea:focus{
+		 background-color: #ffeda0;
+	 }
+	 
+	 input[type="submit"] {margin-left: 130px;}
+	 
+	 
+} /* Ende @media */
+
+/*==================================================================================================================
+
+E N D E formluare.css
+
+==================================================================================================================*/

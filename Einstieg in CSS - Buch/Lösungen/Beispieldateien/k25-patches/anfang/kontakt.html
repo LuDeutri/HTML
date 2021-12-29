@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head> 
+  <meta charset="utf-8">
+  <title>Kontakseite – Little Boxes (Webseiten gestalten mit HTML und CSS)</title>
+  <meta name="description" content="Kontaktformular für die Beispielsite">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link href="favicon.ico" rel="shortcut icon">
+  <link href="css/zentrale.css" rel="stylesheet">
+
+  <!-- jQuery direkt aus dem Web laden --> 
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  
+  <!-- DoubleTapToGo laden --> 
+  <script src="js/doubletaptogo.min.js"></script>
+
+  <!-- DoubleTapToGo nur für li-Elemente mit Untermenü ausführen --> 
+  <script>
+  $( function()
+      { 
+          $( '#navibereich li:has(ul)' ).doubleTapToGo();
+      });
+  </script>
+  
+</head>
+
+<body>
+<div id="wrapper">
+
+<nav class="menu"><a href="#navibereich" class="menubutton">Menü</a></nav>
+
+<header id="kopfbereich">
+ <h1><img src="bilder/little-boxes-logo.gif" 
+          srcset="bilder/little-boxes-logo-2x.gif 2x"
+          class="logo" 
+          alt="Little Boxes" 
+          width="222" 
+          height="32"></h1>
+  <p class="slogan">Webseiten gestalten mit HTML und CSS. <span>Grundlagen.</span></p>
+</header> 
+
+<nav id="navibereich" class="cf">
+  <h2>Navigation</h2>
+  <ul class="navmain level1">
+    <li><a href="index.html">Startseite</a></li>
+    <li><a href="hobbys.html">Hobbys</a>
+      <ul class="level2">
+        <li><a href="#">Webdesign</a></li>
+        <li><a href="#">Fotografie</a></li>
+        <li><a href="#">Musik</a></li>
+      </ul>
+    </li>
+    <li><a href="galerie.html">Galerie</a></li>
+    <li><a href="kontakt.html" class="sie-sind-hier">Kontakt</a></li>
+  </ul>
+  
+  <form class="suchformular" action="#">
+    <label for="suchfeld">Diese Site durchsuchen: </label>
+    <input type="text" 
+           name="suchfeld" 
+           id="suchfeld" 
+           size="10" 
+           maxlength="60">
+    <input type="image" 
+           alt="Suchen" 
+           class="lupe" 
+           src="bilder/lupe.png">
+  </form>
+</nav> 
+
+<main id="inhaltsbereich">
+
+<h2>Kontaktseite</h2>
+
+<form class="kontaktformular" action="#" method="post">
+  <div>
+    <label for="besuchername">Ihr Name:</label>
+    <input type="text" id="besuchername" name="besuchername">
+  </div>
+  <div>
+    <label for="besuchermail">Ihre E-Mail:</label>
+    <input type="email" id="besuchermail" name="besuchermail">
+  </div>
+  <div>
+  <label for="nachricht">Ihre Nachricht:</label>
+  <textarea id="nachricht" name="nachricht"
+            cols="20" rows="5"></textarea>
+  </div>
+  <div>
+    <input type="submit" value="Abschicken">
+  </div>
+</form>
+
+ 
+</main> 
+
+<footer id="fussbereich">
+  <address>
+  Little Boxes &bull; Kästchenweg 12 &bull; 01234 Boxberg
+  <br>
+  Tel: 01234 567890 &bull; Fax: 01234 567891
+  </address>
+</footer> 
+
+</div> <!-- Ende wrapper -->
+
+</body>
+</html>

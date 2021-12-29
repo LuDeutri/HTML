@@ -1,0 +1,176 @@
+/* =========================================================
+
+   Stylesheet für die Beispielsite aus "Einstieg in CSS"
+
+   Datei: bildschirm.css
+   Datum: ...
+   Autor: ...
+  
+========================================================== */
+
+@media screen {
+
+  /* =======================================
+  1. Allgemeine Styles
+  ======================================= */
+  body {
+    background-color: #8c8c8c; 
+    background-image:url(../bilder/hintergrund.png);
+    color: white;  
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 87.5%; 
+  } 
+  
+  h1, h2, h3, h4, h5, h6 { 
+    font-family: Georgia, serif; 
+  }
+  
+  address {
+    text-align: center;
+    font-size: 85%;
+    font-style: normal;
+    letter-spacing: 2px;
+    line-height: 1.5;
+  }
+  
+  /* Hyperlinks */ 
+  a { text-decoration: none; } 
+  main a { text-decoration: underline; }
+  
+  a:link { color: #d90000; }
+  a:visited { color: #cc6666; } 
+  a:hover, a:focus { text-decoration: none; }
+  a:active {
+    background-color: #d90000;
+    color: white;
+  }
+
+  /* Klassen und IDs */ 
+  
+  img.logo {
+    display: inline; 
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border: 10px solid #d9d9d9;
+  }
+   
+  p.slogan {
+    /*
+    position: absolute; 
+    top: 10px;
+    right: 20px;
+    */
+    padding: 5px 0; 
+    margin-bottom: 0; 
+   }
+  p.slogan span { 
+    color: #d90000; 
+  }
+
+  .floatlinks {
+    float:left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .floatrechts {
+    float:right;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  .bilderrahmen {
+    padding: 3px;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .clearing { clear: both; } 
+  
+  /* Micro-Clearfix-Hack */ 
+  .cf:before, 
+  .cf:after {
+    content: " ";
+    display: table; 
+  }
+  .cf:after {
+    clear: both; 
+  }
+
+  
+  /* =======================================
+  2. Styles für die Layoutbereiche
+  ======================================= */
+  
+  div#wrapper {
+    background-color: white;
+    color: black;
+    width: 720px;
+  width: auto; 
+    margin: 10px auto;
+  margin: 0 auto; 
+  }
+  
+  header#kopfbereich {
+  position: relative; 
+    background-color: #f3c600;
+    color: black;
+    padding: 10px 20px;
+  }
+
+  main#inhaltsbereich { 
+    line-height: 1.5;
+    padding: 20px; 
+  }
+  main#inhaltsbereich h2 {
+    line-height: 1; 
+  }
+  
+  aside#infobereich,
+  aside#newsbereich {
+    line-height: 1.5;
+    padding: 20px;
+  }
+
+  footer#fussbereich {
+    padding: 10px 20px 20px 20px;
+    border-top: 1px solid #8c8c8c;
+    margin-top: 0;
+  }
+
+  /* =======================================
+3. Sonstige Styles
+======================================= */
+
+  div.galerie {
+    padding: 25px 10px 10px 0;
+    margin: 0 3px 3px 0;
+   }
+
+  div.galerie img {
+    float: left;
+    border-radius: 4px;                      
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.3); 
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+
+  aside h3 { 
+    font-size: 110%; 
+    color: #444;
+    line-height: 1;
+    border-top: 1px solid #d9d9d9;
+    padding-top: 0.5em;
+  }
+  
+  section.linkliste > ul {
+    list-style-type: square;
+    padding: 0;
+    margin: 1em 0 2em 2em;
+  } 
+  
+  
+} /* Ende @media – nicht löschen! */
+
+/* ======================================
+   E N D E  
+====================================== */

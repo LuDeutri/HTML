@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title>Tabellen gestalten - Einstieg in CSS</title>
+  
+  <style>
+  
+    body { 
+      font-family: Verdana, Arial, Helvetica, sans-serif; 
+      font-size: 87.5%  
+    } 
+    
+    table {
+      border-collapse: collapse; 
+      border-spacing: 1px;  
+    }
+    
+    thead { background-color: #f3c600; }
+    tbody { background-color: #ffeb91; }
+    tfoot { 
+      background-color: #fff6cc; 
+      font-size: 85.71%; 
+    /* nur bei border-collapse: collapse sinnvoll */
+      
+      border-top: 1px solid #f3c600; 
+      border-bottom: 1px solid #f3c600; 
+      
+    }
+    tfoot a { text-decoration: none; color: black; }
+    tfoot a:hover, table a:focus { text-decoration: underline; }
+    
+ 
+    th, td {
+      vertical-align: top; 
+      text-align: left; 
+      padding: 0.5em 1em; 
+    }
+    
+    tbody tr:nth-child(odd) { background-color: #fff6cc; }
+    
+    tbody tr:hover { background-color: #f3c600; }
+    
+  </style>
+</head>
+
+<body>
+<h1>Tabellen gestalten per CSS</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nr. </th>
+      <th>Album</th>
+      <th>Interpret</th>
+      <th>Jahr</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1.</td>
+      <td>Blonde on Blonde</td>
+      <td>Bob Dylan</td>
+      <td>1966</td>
+    </tr>
+    <tr>
+      <td>2.</td>
+      <td>Revolver</td>
+      <td>The Beatles</td>
+      <td>1966</td>
+    </tr>
+    <tr>
+      <td>3.</td>
+      <td>Exile on Main St.</td>
+      <td>The Rolling Stones</td>
+      <td>1972</td>
+    </tr>
+    <tr>
+      <td>4.</td>
+      <td>The Velvet Underground &amp; Nico</td>
+      <td>The Velvet Underground</td>
+      <td>1967</td>
+    </tr>    
+    <tr>
+      <td>5.</td>
+      <td>The White Album</td>
+      <td>The Beatles</td>
+      <td>1968</td>
+    </tr>
+    <tr>
+      <td>6.</td>
+      <td>Never Mind the Bollocks</td>
+      <td>Sex Pistols</td>
+      <td>1977</td>
+    </tr>    
+    <tr>
+      <td>7.</td>    
+      <td>Nevermind</td>
+      <td>Nirvana</td>
+      <td>1991</td>
+    </tr>
+    <tr>
+      <td>8.</td>    
+      <td>Pet Sounds</td>
+      <td>The Beach Boys</td>
+      <td>1966</td>
+    </tr>    
+    <tr>
+      <td>9.</td>    
+      <td>Born to Run</td>
+      <td>Bruce Springsteen</td>
+      <td>1975</td>
+    </tr>    
+    <tr>
+      <td>10.</td>    
+      <td>Sgt. Pepper</td>
+      <td>The Beatles</td>
+      <td>1967</td>
+    </tr>        
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="4">
+      <a href="http://de.wikipedia.org/wiki/500_beste_Alben_aller_Zeiten_(Rolling_Stone)#Die_ersten_Zehn_2" target="_blank">Quelle: Rolling Stone Deutschland (Wikipedia)</a>
+      </td>
+    </tr>
+  </tfoot>
+</table>
+  
+</body>
+</html>

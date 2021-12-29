@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head> 
+  <meta charset="utf-8">
+  <title>Startseite – Little Boxes (Webseiten gestalten mit HTML und CSS)</title>
+  <meta name="description" content="Little Boxes führt Sie durch das Labyrinth von HTML und CSS, von den ersten Schritten bis zur professionell gestalteten Webseite.">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link href="favicon.ico" rel="shortcut icon">
+  <link href="css/zentrale.css" rel="stylesheet">
+
+</head>
+
+<body>
+<div id="wrapper">
+
+<header id="kopfbereich">
+  <h1><img src="bilder/little-boxes-logo.gif" 
+           srcset="bilder/little-boxes-logo-2x.gif 2x"
+           class="logo" 
+           alt="Little Boxes" 
+           width="222" 
+           height="32"></h1>
+  <p class="slogan">Webseiten gestalten mit HTML und CSS. <span>Grundlagen.</span></p>
+</header> 
+
+<nav id="navibereich" class="cf">
+  <h2>Navigation</h2> 
+  <ul class="navmain level1">
+    <li><a href="index.html" class="sie-sind-hier">Startseite</a></li>
+    <li><a href="hobbys.html">Hobbys</a>
+      <ul class="level2">
+        <li><a href="#">Webdesign</a></li>
+        <li><a href="#">Fotografie</a></li>
+        <li><a href="#">Musik</a></li>
+      </ul>
+    </li>
+    <li><a href="galerie.html">Galerie</a></li>
+    <li><a href="kontakt.html">Kontakt</a></li>
+  </ul>
+  
+  <form class="suchformular" action="#">
+    <label for="suchfeld">Diese Site durchsuchen: </label>
+    <input type="text" 
+           name="suchfeld" 
+           id="suchfeld" 
+           size="10" 
+           maxlength="60">
+    <input type="image" 
+           alt="Suchen" 
+           class="lupe" 
+           src="bilder/lupe.png">
+  </form>
+</nav> 
+
+<main id="inhaltsbereich">
+
+<h2>Startseite</h2>
+
+<p><img src="bilder/ballon.jpg" srcset="bilder/ballon-2x.jpg 2x" alt="Bunter Ballon" width="78" height="100" class="bilderrahmen floatrechts">Webseiten bestehen aus <strong>rechteckigen Kästchen</strong>, die über-, neben- und ineinandergestapelt werden. Alles Runde ist entweder Trick, Grafik oder beides.</p> 
+
+<p>Die folgenden Schritte zeigen den Weg vom Zusammenbauen der 
+<em>Kisten</em> bis zur fertig gestalteten <em>Webseite</em>:</p>
+
+<ul>
+  <li>So funktioniert HTML</li>
+  <li>Wichtige HTML-Elemente
+    <ul>
+    <li>Überschriften</li>
+    <li>Absätze und Listen</li>
+    <li>Links und Grafiken</li>
+    </ul>
+  </li>
+  <li>Gestalten mit CSS</li>
+</ul>
+
+<p>Besuchen Sie <a href="http://little-boxes.de/">die Website zum Buch</a> für weitere Informationen.</p>
+ 
+</main> 
+
+<footer id="fussbereich">
+  <address>
+  Little Boxes &bull; Kästchenweg 12 &bull; 01234 Boxberg
+  <br>
+  Tel: 01234 567890 &bull; Fax: 01234 567891
+  </address>
+</footer> 
+
+</div> <!-- Ende wrapper -->
+
+  
+</body>
+</html>

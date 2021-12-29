@@ -1,0 +1,47 @@
+/*==================================================================================================================================
+ Stylesheet für die Beispielsite aus "Einstieg in CSS"
+ Datei: druckversion.css
+ Datum: 10.10.16
+ Autor: Luca Deutrich
+===================================================================================================================================*/
+
+@media print{
+	
+	 body{
+		 font-family: Georgia, "Times New Roman", Times, serif;
+		 font-size: 12pt;
+	 }
+	
+	 h2{
+		 font-family: Arial, Helvetica, sans-serif;
+		 font-size: 18pt;
+		 padding-top: 6pt;
+		 border-top: 3pt solid #d90000;
+		 margin-top: 12pt;
+	 }
+	
+	 blockquote{
+		 font-style: italic;
+		 padding-left: 2cm;
+		 padding-right: 2cm;
+	 }
+	
+	 div#navibereich{ display: none; }
+	 
+	a{
+		 color: black;
+		 text-decoration: none;
+	}
+	
+	a[href]:after{
+		content: " [URL: "attr(href)"] "; /* a href = selektor: alle href elemente inherhalb eines a elements werden ausgewählt, after= pseudoelement: text wird nach dem inhalt aber im element eingefügt, content: text wird hinzugefügt, " [URL: "= [URL wird angezeigt, attr(href) gibt den für href definierten Inhalt an, "] "=] wird angezeigt  */
+	}
+	
+	
+} /*Ende @media*/
+
+/*==================================================================================================================================
+
+E N D E druckversion.css
+
+==================================================================================================================================

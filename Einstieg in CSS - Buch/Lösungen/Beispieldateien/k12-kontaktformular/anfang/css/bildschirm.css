@@ -1,0 +1,96 @@
+/* =========================================================
+
+   Stylesheet für die Beispielsite aus "Einstieg in CSS"
+
+   Datei: bildschirm.css
+   Datum: ...
+   Autor: ...
+   Aufbau: 1. Allgemeine Styles
+           2. Styles für Layoutbereiche
+           3. Sonstige Styles
+========================================================== */
+
+@media screen {
+
+  /* =======================================
+  1. Allgemeine Styles
+  ======================================= */
+  body {
+    background-color: #8c8c8c; 
+    background-image:url(../bilder/hintergrund.png);
+    color: white;  
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 87.5%; 
+  } 
+  
+  address {
+    text-align: center;
+    font-size: 85%;
+    font-style: normal;
+    letter-spacing: 2px;
+    line-height: 1.5;
+  }
+  
+  /* Hyperlinks */ 
+  a { text-decoration: none; } 
+  main a { text-decoration: underline; }
+  
+  a:link { color: #d90000; }
+  a:visited { color: #cc6666; } 
+  a:hover, a:focus { text-decoration: none; }
+  a:active {
+    background-color: #d90000;
+    color: white;
+  }
+
+  /* Klassen und IDs */ 
+  
+  img.logo {
+    display: inline; 
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border: 10px solid #d9d9d9;
+  }
+   
+  p.slogan {
+    padding: 5px 0; 
+    margin-bottom: 0; 
+   }
+  p.slogan span { 
+    color: #d90000; 
+  }
+
+  
+  /* =======================================
+  2. Styles für die Layoutbereiche
+  ======================================= */
+  
+  div#wrapper {
+    background-color: white;
+    color: black;
+    width: 720px;
+    margin: 10px auto;
+  }
+  
+  header#kopfbereich {
+    background-color: #f3c600;
+    color: black;
+    padding: 10px 20px 0 20px;
+  }
+
+  main#inhaltsbereich { 
+    padding: 20px; 
+  }
+  
+  footer#fussbereich {
+    padding: 10px 20px 20px 20px;
+    border-top: 1px solid #8c8c8c;
+    margin-top: 0;
+  }
+
+} /* Ende @media – nicht löschen! */
+
+/* ======================================
+   E N D E  
+====================================== */

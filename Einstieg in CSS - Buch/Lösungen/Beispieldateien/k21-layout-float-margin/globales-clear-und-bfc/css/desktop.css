@@ -1,0 +1,31 @@
+/* =====================================================
+
+  Stylesheet für die Beispielsite aus "Einstieg in CSS"
+  Datei: desktop.css
+  Datum: ...
+  Autor: ...
+  
+========================================================== */
+
+@media screen and (min-width:768px) {
+
+  /* Breite für den Wrapper auf dem Desktop */
+  div#wrapper {
+    width: 720px; /* für Exkurs gloabe Wirkung clear und BFC feste Breite */
+    margin: 10px auto;
+  }
+
+  /* Inhalte für den Desktop gestalten */
+  p.slogan {
+    position:absolute;
+    top: 10px;
+    right: 20px;
+  }
+
+  
+ } /* Ende @media – nicht löschen! */
+
+
+/* ======================================
+   E N D E  
+====================================== */

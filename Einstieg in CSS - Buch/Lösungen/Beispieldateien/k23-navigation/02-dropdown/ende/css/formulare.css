@@ -1,0 +1,94 @@
+/* =====================================================
+
+   Stylesheet für die Beispielsite aus "Einstieg in CSS"
+
+   Datei: formulare.css
+   Datum: ...
+   Autor: ...
+   
+========================================================== */
+
+@media screen {
+
+  .kontaktformular  {
+    background-color: #f1f1f1;
+    line-height: 1.2;
+    padding: 1em;
+    border-top: 1px solid #d9d9d9; 
+    border-bottom: 1px solid #d9d9d9; 
+    margin-bottom: 2em;
+  }
+
+  .kontaktformular  > div { margin-bottom: 1em; } 
+
+  .kontaktformular label {
+    display: block; 
+    cursor: pointer;  
+    margin-bottom: 0.25em;
+  }
+  
+  .kontaktformular input[type="text"],
+  .kontaktformular input[type="email"],
+  .kontaktformular textarea {
+    width: 80%; 
+    padding: 0.25em;
+    margin-bottom: 1em;
+  }
+  .kontaktformular textarea {
+    max-width: 100%;
+    min-height: 7em;
+  }
+
+  .kontaktformular input:focus,
+  .kontaktformular textarea:focus {
+    background-color: #ffeda0;
+  }
+
+  .kontaktformular input[type="submit"] { 
+    font-size: 100%;
+    font-family: "Open Sans", sans-serif;
+    background: #ffeda0; 
+    padding: 10px;
+    border: 1px solid #f3c600; 
+    
+  }
+  .kontaktformular input[type="submit"]:hover,
+  .kontaktformular input[type="submit"]:focus {
+    background: #d90000; 
+    color: white; 
+    border: 1px solid #d90000; 
+    cursor: pointer; 
+    outline: none; 
+  }
+
+} /* Ende @media – nicht löschen! */ 
+
+
+@media screen and (min-width: 768px) {
+  
+  .kontaktformular  { 
+    min-width: 320px; 
+    max-width: 500px; 
+  }
+  .kontaktformular input[type="text"],
+  .kontaktformular input[type="email"],
+  .kontaktformular textarea {
+    width: 280px;
+  }  
+  .kontaktformular label {
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
+    width: 125px;
+    cursor: pointer;
+  }
+  .kontaktformular input[type="submit"] { 
+    margin-left: 130px; 
+    -webkit-appearance:none;
+  }
+  
+} /* Ende @media – nicht löschen! */
+
+/* ======================================
+   E N D E  
+====================================== */

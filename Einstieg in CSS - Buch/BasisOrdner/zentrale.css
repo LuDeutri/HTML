@@ -1,0 +1,20 @@
+/*=====================================================
+Zentrales Stylesheet - wird im <head> der Webseiten eingebunden
+Datei: zentrale.css
+Datum: 22.09.16
+Autor: Luca Deutrich
+=======================================================*/
+@import url(fundament.css);
+@import url(bildschirm.css);
+@import url(navi-float-horizontal.css);
+@import url(navi-float-vertikal.css);
+@import url(formulare.css);
+@import url(druckversion.css);
+@import url(desktop.css);
+
+/*Hier werden später weitere Stylesheets eingebunden*/
+
+
+/*=====================================================
+E N D E zentrale.css
+=======================================================*/

@@ -1,0 +1,56 @@
+/*==================================================================================================================================
+ Stylesheet für die Navigationsleiste von ............
+ Datei: ...... .css
+ Datum: .. .. ..
+ Autor: 
+===================================================================================================================================*/
+
+@media screen{
+
+div#navibereich{
+	 text-align: left;                    /*Inline-Boxen linksbündig*/
+	 color: black;
+	 background-color: #f3c600;
+	 padding: 5px 20px 4px 20px;
+	 border-bottom: 1px solid #8c8c8c;     /*Rahmenlinie unten grau*/
+}
+
+div#navibereich ul{ margin: 0;}
+div#navibereich li{
+	 display: inline;                     /*li nebeneinander anzeigen*/
+	 list-style-type: none;               /*ohne Aufzählungspunkte*/
+	 margin: 0;
+}
+
+div#navibereich a{ 
+     color: black;
+	 background-color: #ffeda0;
+	 padding: 4px 8px;
+	 border: 1px solid #8c8c8c;
+}
+	 
+div#navibereich li.sie-sind-hier a{
+	 color:black;
+	 background-color: white;
+	 border-bottom-color: white;
+}
+	 
+div#navibereich a:hover,
+div#navibereich a:focus{
+	 color:black;
+	 background-color: white;
+	 border-bottom-color: white;
+}
+
+div#navibereich a:active{
+	 color: black;
+	 background-color: white;
+	 border-bottom-color: white;
+}
+
+}    /*Ende @media*/
+
+
+/*==================================================================================================================================
+E N D E ..... .css
+==================================================================================================================================*/

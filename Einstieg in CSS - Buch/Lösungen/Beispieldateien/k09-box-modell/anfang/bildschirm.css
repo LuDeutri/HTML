@@ -1,0 +1,50 @@
+/* Stylesheet für die Beispielsite aus "Einstieg in CSS" */
+
+body {
+  background-color: #8c8c8c; 
+  color: white; 
+ 
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 87.5%; 
+}
+
+div#wrapper {
+  background-color: white;
+  color: black;
+}
+
+header#kopfbereich {
+  background-color: #f3c600; 
+  color: black;
+}
+
+img.logo { 
+  background-color: white;
+  color: black;
+}
+
+address {
+  text-align: center;  
+  font-size: 85%;      
+  font-style: normal;  
+  letter-spacing: 2px; 
+  line-height: 1.5;    
+}
+
+a { text-decoration: none; } 
+main a { text-decoration: underline; } 
+
+a:link { color: #d90000; }
+a:visited { color: #cc6666; } 
+
+a:hover, a:focus {
+  text-decoration: none;
+}
+a:active {
+  background-color: #d90000;
+  color: white;
+}
+
+p.slogan span { color: #d90000; }
+
+

@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+
+
+<head> <!-- Im Head stehen Informationen über die Website-->
+     <meta charset="utf-8">
+	 <title>Startseite - Little Boxes (Webseiten gestalten mit HTML und CSS)</title>
+	 <meta name="description" content="Little Boxes führt Sie durch das Labyrinth von HTML und CSS, von den ersten Schritten bis zur professionell gestalteten Webseite.">
+     <meta name="viewport" content="width=device-width">
+	 
+	 <link href="favicon.ico" rel="shortcut icon"> <!-- auf antifavicon.com kann man ein icon erstellen und downloaden -->
+	 <link href="zentrale.css" rel="stylesheet"> <!-- Traditional ist ein gespeicherter Stylsheet, weitere: Midnight, Ultramarine, Chocolate, Oldstyle, Modernist, Steely, Swiss -->
+	 
+</head>
+
+<body>
+     <div id="wrapper">
+	 
+	 
+	     <div id="kopfbereich">
+	         <h1><img src="little-boxes-logo.gif" id="logo" alt="Little Boxes" width="222" height="32"</h1> <!-- alt= gibt einen Text an, der angezeigt werden soll, wenn das Bild nicht lädt-->
+	         <p id="slogan">Websiten gestalten mit HTML und CSS. <span>Grundlagen.</span></p>
+	 
+	     </div> <!-- Ende kopfbereich-->
+	     <div id="navibereich">
+		     <ul>
+			     <li class="sie-sind-hier"><a href="index.html">Startseite</a></li>
+				 <li><a href="galerie.html">Galerie</a></li>
+				 <li><a href="kontakt.html">Kontakt</a></li>
+	         </ul>
+	 
+	     </div> <!-- Ende navibereich-->
+	     <div id="textbereich">
+	         <h2>Startseite</h2>
+	 
+	         <p>
+			 <img src="ballon.jpg" alt="Roter Luftballon" width="78" height="100" class="bilderrahmen floatrechts">Webseiten bestehen aus <strong> rechteckigen Kästchen</strong>, die über-,neben- und ineinandergestapelt werden. Alles Runde ist entweder Trick, Grafik oder beides.
+	         </p>
+			 
+	         <p>Die folgenden Schritte zeigen den Weg vom Zusammenbauen der <em>Kisten</em> bis zur fertig gestalteten <em>Webseite</em>:</p>
+	 
+	         <ul> <!-- Unordered list: Aufzählung mit z.B. Punkten/ Keine feste Reihenfolge nötig-->
+	             <li>So funktioniert HTML</li>
+		         <li>Wichtige HTML-Elemente
+		         <ul>
+		             <li>Überschriften</li>
+			         <li>Absätze und Listen</li>
+			         <li>Links und Grafiken</li>
+		         </ul>
+		         </li> <!-- beginnt vor "wichtige HTML-Elemente"-->
+		         <li>Gestalten mit CSS</li>
+	         </ul>
+	 
+	         <!-- <ol start="1" type="1"> Ordered list: Aufzählung mit z.B. Zahlen/ Feste Reihenfolge vorgegeben (start= mit welcher Zahl/symbol beginnt es, type=Mit was wird gezählt, zahlen, römische zahlen, Buchstaben usw.)
+	             <li>So funktioniert HTML</li>
+		         <li>Wichtige HTML-Elemente</li>
+		         <li>Gestalten mit CSS</li>
+	         </ol> -->
+	 
+	         <p>Besuchen Sie <a href="http://little-boxes.de/" title="little-boxes.de - mit Infos zum Buch">die Website zum Besuch</a> für weitere Informationen.</p> <!--title:... wird angezeigt wenn man mit der maus auf den Link geht ohne zu drücken. -->
+	 
+	     </div> <!-- Ende textbereich-->
+	     <div id="fussbereich">
+	         <address>
+			     Little Boxes &middot; Kästchenweg 12 &middot; 01234 Boxberg <!-- & = und-zeichen: gibt an dass ein symbol folgt. middot ist ein punkt mitten in der Zeile. Auch gehen würde z.b. &euro usw. da manche Browser die Symbole nach normaler eingabe nicht richtig anzeigen, so ists sicher.-->
+				 <br>
+				 Tel: 01234 567890 &middot; Fax: 01234 567891
+			 </address>
+	 
+	     </div> <!-- Ende fussbereich-->
+	 </div> <!-- Ende wrapper-->
+	 
+</body>
+
+
+</html>

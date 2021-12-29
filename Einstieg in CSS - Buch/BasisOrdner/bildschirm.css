@@ -1,0 +1,147 @@
+/*==================================================================================================================================
+ Stylesheet für die Beispielsite aus "Einstieg in CSS"
+ Datei: bildschirm.css
+ Datum: 22.09.16
+ Autor: Luca Deutrich
+ Aufbau: 1.Allgemeine Styles
+         2. Styles für Layoutbereiche
+		 3. Sonstige Styles
+===================================================================================================================================*/
+
+@media screen{
+	
+/*======================================================================================================
+1.Allgemeine Styles
+======================================================================================================*/
+
+.bilderrahmen{
+	 padding: 3px;
+	 border: 5px solid #ccc;
+	 border-radius: 5px;
+}
+
+.floatlinks{
+	 float:left;
+	 margin-right: 10px;
+	 margin-bottom: 10px;
+}
+
+.floatrechts{
+	 float:right;
+	 margin-left: 10px;
+	 margin-bottom: 10px;
+}
+
+body {
+     background: #8c8c8c url(hintergrund.png) fixed repeat left top;       /*Falls das Bild nicht angezeigt wird, wird die Hintergrundfarbe angezeigt, Bild-Verzeichnis, repeat=das Bild wiederholt sich (no repeat wäre das gegenteil), left top= Bild wird links oben gesetzt*/
+	 color: white;
+	 font-family: Verdana, Arial, Helvetica, sans-serif;
+	 font-size: 87.5%;                                                     /*Schriftgröße*/
+}
+
+h1{ font-size: 150%}
+h2{ font-size: 130%}
+h3{ font-size: 110%}
+
+address{
+	 text-align: center;                        /*zentrieren*/
+	 font-size: 80%;                            /*etwas kleiner als der Rest*/
+	 font-style: normal;                        /*normale Schrift, nicht kursiv*/
+	 letter-spacing: 2px;                       /*Abstand zwischen den Buchstaben*/
+	 line-height: 1.5;                          /*Zeilenabstand, ohne Einheit*/
+}
+
+a{ text-decoration: none;}                      /*Unterstreichung entfernen*/
+
+a:link{color: #d90000;}                         /*Farbe von Links die noch nicht besucht wurden*/
+a:visited{color: #cc6666}                       /*Farbe von Links die bereits besucht wurden*/
+a:hover,                                        /*wenn der Mauszeiger darüber schwebt*/
+a:focus{                                        /*wenn der Link per Tastatur ausgewählt wird (im grunde das selbe wie hover, deswegen meist zusammen formuliert)*/
+	 border-bottom:1px solid #d90000;
+}
+
+a:active{                                       /*im Moment des Klicks*/
+	 color: white;
+	 background-color:#d90000;
+}                                               /*a Regeln in dieser Reihenfolge halten! (link, visited, hover und focus, active)*/
+
+/*Allgemeine Klassen und IDs*/
+
+img#logo{
+	 background-color: white;
+	 color: black;
+	 padding: 10px;
+	 border: 10px solid #d9d9d9
+}
+
+/*======================================================================================================
+2. Styles für die Layoutbereiche
+======================================================================================================*/
+
+div#wrapper{
+	 background-color: white;
+	 color: black;
+	 width: auto;
+	 margin: auto;
+}
+
+div#kopfbereich{
+	 position: relative;     /*positiniert, aber bleibt im Fluss*/
+	 background-color: #f3c600;               /* Gelb-Orange */
+	 color: black;
+	 padding:10px 20px 0 20px;
+}
+
+p#slogan{
+	 /* position:absolute;
+	 top: 10px;
+	 right:20px; */
+	 padding: 5px 0;
+	 margin-bottom: 0;
+}
+
+p#slogan span {color: #d90000;}                        /*Schriftfarbe*/
+
+div#navibereich{padding: 5px 20px;}
+
+div#textbereich{
+	 padding: 20px;
+     line-height: 1,5;}
+	 
+div#textbereich a{ border-bottom: 1px dotted #cc0000;}
+ 
+div#textbereich a:hover,
+div#textbereich a:focus{
+	     border-bottom: 1px solid #d90000;
+     }
+
+div#fussbereich{
+	 padding: 10px 20px 20px 20px;         /*unterhalb der Rahmenlinie*/
+	 border-top: 1px solid #8c8c8c;        /*Rahmenlinien oben*/
+	 margin-top: 0;                        /*Oberhalb der Rahmenlinie*/ /*war 20px*/
+}
+
+/*======================================================================================================
+3. Sonstige Styles
+======================================================================================================*/
+
+/*Die kleine Galerie*/
+div.galerie{
+	 padding: 25px 10px 10px 0;
+	 margin: 0 3px 3px 0;
+}
+
+div.galerie img{
+	 float: left;
+	 border-radius: 4px;                       /*Runde Ecken*/
+	 box-shadow: 0px 2px 6px rgba(0,0,0,0,3); /*Schatten*/
+	 margin-right: 15px;
+	 margin-bottom: 15px;
+}
+
+}     /*Ende @media*/
+
+
+/*==================================================================================================================================
+E N D E bildschirm.css
+==================================================================================================================================*/

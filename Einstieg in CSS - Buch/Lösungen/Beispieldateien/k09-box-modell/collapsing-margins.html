@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<!-- Kapitel 09 - Beispiel für collapsing margins -->  
+<head> 
+  <meta charset="utf-8"> 
+  <title>Collapsing Margins - "Einstieg in CSS"</title>
+  <meta name="description" content="Über das manchmal etwas seltsame Verhalten von Margins"> 
+  
+  <style>
+  
+  header { 
+    font-family: Verdana, sans-serif;
+    background-color: darkred; 
+    color: white;
+    width: 720px; 
+    margin: auto; 
+  } 
+  h1 { margin-top: 0; margin-bottom: 0.5em; }
+  p { margin-top: 0; margin-bottom: 1em; }
+  
+  /* Oberer Außenabstand für h1 */ 
+  /* h1 {margin-top: 100px;} */ 
+
+  /* Lösung: margin-top von h1 bleibt innerhalb von #kopfbereich */
+  /* header { padding-top: 1px; } */
+  /* header { border-top: 1px solid transparent; }*/
+
+  /* Lösung: margin-bottom von p bleibt innerhalb von #kopfbereich */
+  /* header { padding-bottom: 1px; } */
+  /* header { border-bottom: 1px solid transparent; }*/
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1 lang="en">Collapsing Margins</h2>
+    <p>Webseiten gestalten mit HTML und CSS</p> 
+  </header> 
+
+</body>
+</html>

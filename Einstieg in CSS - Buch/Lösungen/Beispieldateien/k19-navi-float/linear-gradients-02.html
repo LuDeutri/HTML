@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="de">
+<head>
+	<meta charset="utf-8">	
+	<title>Lineare Farbverläufe 2 - Einstieg in CSS</title>
+
+  <style>
+    body { width: 50%; margin: 0 auto; line-height: 1.7; font-family: sans-serif;}
+    code { font-style: Courier, mono; font-size: 1rem; padding: 0.25em; }
+    
+    div { color: black; margin-bottom: 2em;}
+
+    div#eins  { 
+     background: linear-gradient(to right, yellow, green, purple); 
+     width: 35em; 
+     padding: 0.5em; 
+    } 
+
+    div#zwei  { 
+     background: linear-gradient(to right, yellow, lightgreen 10%, purple); 
+     width: 35em; 
+     padding: 0.5em; 
+    } 
+
+    div#drei  { 
+      background: linear-gradient(to right, yellow, green 20%, green 50%, purple); 
+      width: 35em; 
+      padding: 0.5em; 
+    }    
+  </style>
+
+</head>
+<body>
+<h1>Lineare Farbverläufe mit zwei Farben</h1>
+
+<h2>Beispiel Nr. 1</h2>
+<div id="eins">
+<p>Diese Box hat einen einfachen Farbverlauf von oben nach unten.</p> 
+<pre>
+div { 
+  <strong>background: linear-gradient(yellow, purple);</strong>
+  width: 35em; 
+  padding: 0.5em; 
+} 
+</pre>
+</div>
+
+<h2>Beispiel Nr. 2</h2>
+<div id="zwei">
+<p>Diese Box hat einen einfachen Farbverlauf von links nach rechts.</p> 
+<pre>
+div { 
+  background: linear-gradient(to right, yellow, purple); 
+  width: 35em; 
+  padding: 0.5em; 
+} 
+</pre>
+</div>
+
+<h2>Beispiel Nr. 3</h2>
+<div id="drei">
+<p>Diese Box hat einen diagonalen Farbverlauf von links oben nach rechts unten.</p> 
+<pre>
+div { 
+  background: linear-gradient(to right bottom, yellow, purple); 
+  width: 35em; 
+  padding: 0.5em; 
+} 
+
+</pre>
+</div>
+
+
+
+</body>
+</html>

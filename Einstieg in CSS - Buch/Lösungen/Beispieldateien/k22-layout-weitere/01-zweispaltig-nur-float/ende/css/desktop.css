@@ -1,0 +1,76 @@
+/* =====================================================
+
+  Stylesheet für die Beispielsite aus "Einstieg in CSS"
+  Datei: desktop.css
+  Datum: ...
+  Autor: ...
+  
+========================================================== */
+
+@media screen and (min-width:768px) {
+
+  /* Layoutbereiche für den Desktop */ 
+  
+  /* 22.2 Fest, zweispaltig nur mit float */
+  
+  div#wrapper {
+    width: 720px; 
+    margin: 10px auto;
+  }
+  
+  main#inhaltsbereich {
+    float:left;
+    width: 530px;
+  }
+
+  aside#infobereich {
+    float: right;
+    width: 110px;
+    padding: 20px;
+  }
+  
+  
+  /* 22.3 Layout flexibilisieren */ 
+  /*
+  div#wrapper {
+    width: auto; 
+    min-width: 768px; 
+    max-width: 60em; 
+    margin: 10px auto;
+  }
+ main#inhaltsbereich {
+    box-sizing: border-box;  
+    float:left;
+    width: 75%;              
+  }
+  
+  aside#infobereich {
+    box-sizing: border-box;  
+    float: right;
+    width: 25%;              
+    padding: 20px;
+  }
+  */
+  
+  /* Inhalte für den Desktop gestalten */  
+  p.slogan {
+    position:absolute;
+    top: 10px;
+    right: 20px;
+  }
+  
+  aside > h2 {
+    position: absolute;
+    left: -32768px; 
+    top: -32768px; 
+    width: 0; 
+    height: 0; 
+  }
+
+  
+ } /* Ende @media – nicht löschen! */
+
+
+/* ======================================
+   E N D E  
+====================================== */

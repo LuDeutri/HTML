@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="de">
+
+<head> 
+  <meta charset="utf-8">
+  <title>Flexibles Kontaktformular mit Flexbox</title>
+
+  <style>
+    body { 
+      font-family: Verdana, Arial, sans-serif; 
+      font-size: 87.5%; 
+      max-width: 720px; 
+      padding: 2em; 
+      margin: auto; 
+    }
+    
+    .kontaktformular  {
+      min-width: 22em; 
+      max-width: 500px; 
+      background-color: #f1f1f1;
+      line-height: 1.2;
+      padding: 1em;
+      border-top: 1px solid #d9d9d9; 
+      border-bottom: 1px solid #d9d9d9; 
+      margin-bottom: 2em;
+    }
+  
+    .kontaktformular > div { 
+      
+      display: flex; 
+      flex-wrap: wrap; 
+        
+      margin-bottom: 1em; 
+    } 
+
+    .kontaktformular label {
+    
+      flex: 0 0 8em; 
+    
+      margin-right: 10px; 
+      margin-bottom: 0.25em; 
+      cursor: pointer;  
+      /*
+      display: inline-block; 
+      width: 110px;
+      vertical-align: top; 
+      */
+    }
+    
+    .kontaktformular input[type="text"],
+    .kontaktformular input[type="email"],
+    .kontaktformular textarea {
+      
+      flex: 1 1 280px; 
+      
+      padding: 0.25em;
+      margin-bottom: 1em;
+    }
+    
+  </style>
+  
+</head>
+
+<body>
+
+<h2>Kontaktformular</h2>
+
+<form class="kontaktformular" action="#" method="post">
+  <div>
+    <label for="besuchername">Ihr Name:</label>
+    <input type="text" id="besuchername" name="besuchername">
+  </div>
+  <div>
+    <label for="besuchermail">Ihre E-Mail:</label>
+    <input type="email" id="besuchermail" name="besuchermail">
+  </div>
+  <div>
+  <label for="nachricht">Ihre Nachricht:</label>
+  <textarea id="nachricht" name="nachricht" cols="20" rows="5"></textarea>
+  </div>
+  <div>
+    <input type="submit" id="submit" value="Abschicken">
+  </div>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="de">
+<head>
+	<meta charset="utf-8">	
+	<title>Flexbox - Grundlagen</title>
+
+  <style>
+* { box-sizing: border-box; }
+body { font-family: sans-serif; line-height: 1.7; padding: 1em; margin: 0;}
+h1 { font-size: 1.25rem; margin-top: 0;}
+
+/* Grundformatierung */
+main { 
+  max-width: 720px; 
+  background: #f1f1f1; 
+  padding: 0.5em;  
+  border: 1px solid #999;
+}
+article { padding: 0.5em; }  
+article#eins { background: #d5e5f9; } 
+article#zwei { background: #a8caf3; } 
+article#drei { background: #7bafed; } 
+
+main { display: flex; } 
+/*
+main { min-height: 10em; } 
+*/
+article { flex: 1; } 
+
+article { 
+  border-radius: 4px; 
+  margin:10px; 
+}
+    
+article#eins  { flex: 1; } 
+article#zwei  { flex: 2; }    
+article#drei  { flex: 1; }
+/*
+article#eins  { order: 3; } 
+article#zwei  { order: 1; }    
+article#drei  { order: 2; }
+*/
+    
+    
+</style>
+
+</head>
+<body>
+<h1>Flexbox - Grundlagen</h1>
+
+<main>
+  <article id="eins">Artikel 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</article>
+  <article id="zwei">Artikel 2. Nur ein bisschen Text.</article>
+  <article id="drei">Artikel 3. Phasellus finibus nulla posuere arcu blandit, nec venenatis eros commodo. Praesent non maximus nunc, vitae varius tellus. </article>
+</main>
+
+
+</body>
+</html>

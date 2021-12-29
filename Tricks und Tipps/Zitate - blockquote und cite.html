@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+
+
+     <head> <!-- Im Head stehen Informationen über die Website-->
+         <meta charset="utf-8">
+	     <title>Weitere HTML-Elemnte: blockquote</title>
+	 
+	     <style>
+	         body{
+		         font-family: Verdana, Arial, Helvetica, sans-serif;
+		   	     font size: 87,5%
+		     }
+		 
+		     blockquote{
+		         background: #fff6cc;
+			     line-height: 1,7;
+			     padding: 1em 2em;
+			     border-left: 0,5em solid #ffeba91;
+			     margin: 0 0 1em 0;
+		     }
+		 
+		     blockquote cite{
+		         display: block;
+		    	 text-align: right;
+			     font-size: 85,71%;
+			     font-style: normal;
+			     letter-spacing: 1px;
+		     }
+	     </style>
+    </head>
+
+    <body>
+         <p>Der folgende Absatz ist ein Block-Zitat mit Quellenangabe:
+	 
+    	 <blockquote> <!-- Der Text der von diesem Tag eingefasst ist, wird in den meisten Browsern eingerückt oder kursiv dargestellt. Es handelt sich hierbei um ein Zitat.-->
+	         Die Verwendung von Zitaten ist durch Urheberrecht geregelt und unter bestimmten Vorraussetzugen gestattet, ohne dass eine Erlaubnis des Urhebers eingeholt oder diesem eine Vergütung gezaht werden muss (..)
+	         <br>
+	         <cite><a href="http://de.wikipedia.org/wiki/Zitat">Wikipedia</a></cite> <!-- mit cite gibt man die Quelle für das Zitat an-->
+	      </blockquote>
+     </body>
+</html>

@@ -1,0 +1,1 @@
+﻿Die Beispieldateien im Ordner anfang entprechen dem Stand von Ende Kapitel 20, also mit horizontaler Navigation und Media Queries, aber ohne Mehrspaltigkeit im Inhaltsbereich. 

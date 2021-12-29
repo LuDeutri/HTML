@@ -1,0 +1,48 @@
+/* =====================================================
+
+  Stylesheet für die Beispielsite aus "Einstieg in CSS"
+  Datei: desktop.css
+  Datum: ...
+  Autor: ...
+
+========================================================== */
+
+@media screen and (min-width:768px) {
+
+  /* Breite für den Wrapper auf dem Desktop */
+  div#wrapper {
+    width: auto;
+    max-width: 70em;
+    min-width: 768px;
+    margin: 10px auto;
+  }
+
+  /* Inhalte für den Desktop gestalten */
+  p.slogan {
+    position:absolute;
+    top: 10px;
+    right: 20px;
+  }
+
+
+  /* Flexible Layouts  */
+
+  main#inhaltsbereich {
+    background: lightyellow;
+    margin-left: 20%;
+  }
+
+  nav#navibereich {
+    box-sizing: border-box;
+    background: pink;
+    width: 20%;
+    /* plus padding-left: 20px aus navi-float-vertikal.css */
+  }
+
+
+ } /* Ende @media - nicht löschen! */
+
+
+/* ======================================
+   E N D E
+====================================== */

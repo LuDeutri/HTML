@@ -1,0 +1,63 @@
+/*==================================================================================================================================
+Basis-Stylesheet mit Reset und Restaurierung der Abstände
+Datei: fundament.css
+Datum: 22.09.16
+Autor: Luca Deutrich
+Aufbau: 1. Reset
+        2. Abstände restaurieren
+==================================================================================================================================*/
+
+@media all{
+	
+/*===============================================================================================
+TEIL 1 - Reset
+===============================================================================================*/
+
+html {overflow:scroll;}
+
+body, div,
+h1, h2, h3, h4, h5, h6
+p, blockquote, pre, code,
+ul, ol, td,
+form, fieldset, legend, input, textarea{
+	 padding:0; margin:0;
+}
+
+/*===============================================================================================
+TEIL 2 - Abstände restaurieren
+===============================================================================================*/
+
+ul li { list-style-type: square; }              /*Verändert das Zeichen der Aufzählung (Punkte werden geändert in Quadrate)*/
+
+h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ ul, ol {
+	 margin-bottom: 1em;
+}
+
+ul, ol{margin-left:2em;}
+ul ul, ul ol, ol ol, ol ul{margin-bottom:0;}
+blockquote{ margin: 1em 2em}
+
+/*===============================================================================================
+TEIL 3 - Allgemeine Klassen
+===============================================================================================*/
+
+.clearing{clear: both;}
+
+/*Der Kern von Clearfix*/
+.clearfix:after{
+	 content: ".";
+	 display: block;
+	 clear: both;
+	 font-size: 0;
+	 height: 0;
+	 visibility: hidden;
+}
+*:first-child+html .clearfix{min-height: 0;}
+
+} /*Ende @media*/
+
+/*==================================================================================================================================
+E N D E fundament.css
+==================================================================================================================================*/

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8">
+  <title>Hobbys - Little Boxes (Webseiten gestalten mit HTML und CSS)</title>
+  <meta name="description" content="Mit der Little Boxes-Reihe lernen Sie das Gestalten von Webseiten mit HTML und CSS.">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href="css/zentrale.css" rel="stylesheet">
+  
+   <!-- jQuery direkt aus dem Web laden --> 
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  
+  <!-- DoubleTapToGo laden --> 
+  <script src="js/doubletaptogo.min.js"></script>
+
+  <!-- DoubleTapToGo nur für li-Elemente mit Untermenü ausführen --> 
+  <script>
+  $( function()
+      { 
+          $( '#navibereich li:has(ul)' ).doubleTapToGo();
+      });
+  </script>
+
+</head>
+
+<body>
+
+<div id="wrapper">  
+  
+<header id="kopfbereich">
+  <h1><img src="bilder/little-boxes-logo.gif" 
+           srcset="bilder/little-boxes-logo-2x.gif 2x"
+           class="logo" 
+           alt="Little Boxes" 
+           width="222" 
+           height="32"></h1>
+  <p class="slogan">Webseiten gestalten mit HTML und CSS. <span>Grundlagen.</span></p>
+</header>   
+
+<nav id="navibereich" class="cf">
+  <h2>Navigation</h2>
+  <ul class="navmain level1">
+    <li><a href="index.html">Startseite</a></li>
+    <li><a href="hobbys.html" class="sie-sind-hier">Hobbys</a>
+      <ul class="level2">
+        <li><a href="#">Webdesign</a></li>
+        <li><a href="#">Fotografie</a></li>
+        <li><a href="#">Musik</a></li>
+      </ul>
+    </li>
+    <li><a href="galerie.html">Galerie</a></li>
+    <li><a href="kontakt.html">Kontakt</a></li>
+  </ul>
+  
+  <form class="suchformular" action="#">
+    <label for="suchfeld">Diese Site durchsuchen: </label>
+    <input type="text" 
+           name="suchfeld" 
+           id="suchfeld" 
+           size="10" 
+           maxlength="60">
+    <input type="image" 
+           alt="Suchen" 
+           class="lupe" 
+           src="bilder/lupe.png">
+  </form>
+
+</nav>  
+
+<main id="inhaltsbereich">
+<h2>Hobbys</h2>
+ 
+<p>Meine Freizeit verbringe ich außer mit Familie und Freunden mit drei Hobbys:</p>
+<ul>
+  <li>
+  <h3><a href="#">Webdesign</a></h3>
+  <p>HTML, CSS und alles drumherum. </p>
+  </li>
+  <li>
+  <h3><a href="#">Fotografie</a></h3>
+  <p>Digital und analog. Eingefrorene Momente, die soviel Spaß machen. </p>
+  </li>
+  <li>
+  <h3><a href="#">Musik</a></h3>
+  <p>Dave Matthews, Beethoven oder Beatles. Es gibt nur gute und schlechte Musik. </p>
+  </li>
+</ul>
+  
+</main>  
+
+  
+<footer id="fussbereich">
+  <address>
+  Little Boxes &bull; Kästchenweg 12 &bull; 01234 Boxberg
+  <br>
+  Tel: 01234 567890 &bull; Fax: 01234 567891
+  </address>
+</footer> 
+  
+</div> <!-- Ende Wrapper -->   
+<script>
+$(document).ready(function($) {      
+  
+  //test for touch events support and if not supported, attach .no-touch class to the HTML tag.
+  if (!("ontouchstart" in document.documentElement)) {
+    document.documentElement.className += " no-touch";
+  }
+
+}); 
+</script>  
+</body>  
+</html>

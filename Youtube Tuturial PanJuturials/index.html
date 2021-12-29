@@ -1,0 +1,184 @@
+﻿<!doctype html>
+<html>
+<head>                                                  <!-- document aufteilen auf head und body -->
+	 <link rel="stylesheet" type="text/css" href="external.css"/>
+	 
+	 <title>
+	 Erste Seite
+	 </title>
+	 
+	 <style type="text/css">
+	     p{
+		    color:red;                                      
+			font-family:verdana;                        
+		 }
+		 body{
+		     background-color: purple;                  
+			 color: white;                                
+		 }
+		 h1{
+		     background-color: blue;					 
+			 padding-top:20px;						
+			 padding-bottom:30px;				
+			 padding-left:10px;						
+			 padding-right:10px;				
+		     
+			 border: 3px solid black;
+			 border-width: 3px;
+			 border-style: solid;
+			 border-color: black;
+			 
+			 border-left:10px dashed red;
+			 border-left-width: 10px;
+			 border-left-color: red;
+			 border-left-style: dashed;
+			 
+			 margin: 10px;
+			 margin-top: 10px;
+			 margin-bottom: 10px;
+			 margin-ledt: 10px;
+			 margin-right:10px;
+		 }
+		 a:link{color:yellow;}
+		 a:visited{color:red;}
+		 a:hover{background-color:black;
+		     color:white;
+			 font-weight:bold;}
+		 a:active{background-color:green;
+		 }
+		 table{
+		     border: 3px solid black;
+			 background-color:blue;
+		 }
+		 tr{
+		     background-color:red;
+		 }
+		 td{
+		     background-color:green;
+			 border:1px dotted yellow;
+		 }
+		 #wolf{
+		     border:2px solid black;
+		 }
+		 #Haha{
+		     background-color: yellow;
+		 }
+		 span{
+		     font-weight:bold;
+		 }
+		 #green{
+		     color:green;
+		 }
+		 span2{
+		      color:black;
+		 }
+		 .rotgrün{
+		     background-color:red; color:green;
+		 }
+		 div{
+		     border: 2px solid blue;
+			 position:absolute;
+			 width: 150px;
+			 height: 30px;
+			 top: 50px;
+			 left: 500px;
+		 }
+		 #bier{
+		     border:2px solid blue;
+			 position:relative;
+			 width: 150px;
+			 height: 50px;
+			 left: 400px;
+		 }
+		 #tutorials{
+		     border:2px solid yellow;
+			 position:fixed;
+			 width: 150px;
+			 height: 50px;
+			 top: 100px;
+			 left: 400px;
+		 }
+		 ul > li{color:red}
+		 
+		 p:first-letter{
+		     color:red;
+			 font-size:25px;
+		 }
+     </style>
+		 
+</head>
+<body>
+     <strong> Hallo!!!! </strong> lol                  <!-- Fettgedruckter Text-->
+	 <br />                                            <!-- Zeilenumbruch -->
+	 <em> Hallo! </em>                                 <!-- Kursivschrift-->
+	 <br />
+	 
+	 <img src="C:\Users\Luca\Pictures\AcDc\acdc.jpg" height="250"; width="300" />               <!-- Bild einfügen: komplettes Bildverzeichnis + Name einfügen, ggf height u. width anpassen (Datei größe bleibt aber gelich also lieber zuvor mittel Bearbeitungsprogramm verkleinern als so (wegen Ladedauer)) -->
+	 <br />
+	 <a href="http://google.de"><img src="C:\Users\Luca\Pictures\Camera Roll\Unbenannt.png" height="250"; width="300";/> </a>   <!-- Link einfügen, statt des Linksnamen kann man auch ein Bild einfügen, welches somit verlinkt ist.--> 
+	 <br />
+	 <a href="http://google.de"> Link zu Google <a/>
+	 <br />
+	 <a href="index2.html">zur Zweiten Seite <a/>                                               <!-- Link einfügen: zuerst Linkadresse (oder wenn man zu einer selbst erstellten Seite verlinken möchte nur der Name des Projekts eingeben), dann Name der da stehen soll (oft auch "hier" etc.)-->
+	 <br />
+	 <br />
+	 <br />
+	 
+	 <table border="1" width="300px" cellpadding="20px" cellspacing="3px">                     <!-- Tabelle erstellen: border= dicke der Umrandung, width= Breite der Tabelle, Cellpading= Höhe der Tabelle, Cellspacing=Abstand zwischen den Tabellenfeldern (Werte müssen nicht angefügt werden wenn sie 0 betragen, hier nur zur demostartion)-->
+	     <tr>
+		     <th colspan="3"> <h1>Überschrift</h1> </th>                                        <!-- Überschirft für die Tabbelle einfügen: Zahl nach colspan bestimmt für wv Tabellenspalten die Überschrift zählen soll, h1 holt die Überschrift hervor, h2,3,4.... würden immer kleiner werden-->
+	     </tr>
+		 <tr>
+		    <th> Sprache </th>                                 <!-- Bezeichnung der Tabelle (äußerste Tabbellenzeilen auf x-Achse)   1               -->
+			<th> Land </th>                                    <!--                                                                  2               -->
+			<th> Leute </th>                                   <!--                                                                  3               -->
+		 </tr>
+	     <tr>
+		     <td> Spanisch </td>                               <!--                                                                 1.1              -->
+			 <td> Spanien </td>                                <!--                                                                 2.1              -->
+			 <td> Spanier </td>                                <!--                                                                 3.1              -->
+		 </tr>
+		 <tr>
+             <td> Deutsch </td>                                <!--                                                                 2.1              -->
+             <td> Deutschland </td>                            <!--                                                                 2.2              -->
+             <td> Deutsche </td>                               <!--                                                                 3.2              -->
+         </tr>			 
+	 </table>
+	 
+	 
+	 <p> veränderter Text </p>                                <!-- oben wurde festgelegt alles im p-tag soll rot sein, deshalb ist dieser Text rot-->
+	 <p> weiterer Text </p>
+	 <br />
+	 
+	 <p id="wolf">Der Wolf</p>
+	 <p id="Haha">Haha</p>
+	 <p> Das ist <span id="green">jede Menge</span> sinnvoller Text</p>
+	 <p> Und <span2> weiterer </span2> Text
+	 <br/>
+	 <br/>
+	 <br/>
+	 <br/>
+	 <p class="rotgrün">Der gestylte Paragraph</p>
+	 einfacher Text
+	 <p> ungestylter Text <p/>
+	 <p class="rotgrün">Gestylter Text<p/>
+	 <br/>
+	 <br/>
+	 <br/>
+	 <div>Das ist ein Kasten</div>
+	 <div id="bier">Hier gibts Bier </div>
+	 <div id="tutorials">Hier gibts Tutorials </div>
+	 <br />
+	 <ul>
+	     <li>Kind1</li>
+		 <li>Kind2</li>
+		     <ol>
+			     <li>Urenkel</li>
+				 <li>Urenkel2</li>
+			 </ol></li>
+	     <li>Kind3</li>
+     </ul>
+	 
+	 
+</body>
+</html>

@@ -1,0 +1,1 @@
+﻿Die Beispieldateien im Ordner anfang entprechen dem Stand von Ende Kapitel 20, mit einigen kleinen Änderungen, die in K21 vorgenommen wurden (footer clearen, Zeilenabstand für main h2). 

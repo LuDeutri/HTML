@@ -1,0 +1,72 @@
+/* =====================================================
+   
+  Stylesheet für die Beispielsite aus "Einstieg in CSS"
+  Datei: navi-float-vertikal.css
+  Datum: ...
+  Autor: ...
+
+========================================================== */
+
+@media screen and (min-width:768px) {
+
+  #navibereich {
+    float: left;
+    width: 110px;
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+
+  main#inhaltsbereich {
+    margin-left: 130px;
+  }
+  
+  main h2 { line-height: 1; }
+
+  ul.navmain {
+    width: 6em;
+    padding: 0;
+    border-top: 1px solid #d90000;
+    margin: 0;
+  }
+  
+  ul.navmain li {
+    list-style-type: none;
+    border-left: 1px solid #d90000;
+    border-bottom: 1px solid #d90000;
+    margin: 0;
+  }
+
+  ul.navmain a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    background-color: #eee;
+    padding: 4px;
+    border-left: 3px solid #eee;
+  } 
+
+  ul.navmain a.sie-sind-hier {
+    color: black;
+    background-color: white;
+    border-left-color: #d90000;
+    border-bottom: none;
+  }
+
+  ul.navmain a:hover,
+  ul.navmain a:focus {
+    color: black;
+    background-color: white;
+    border-left-color: #d90000;
+    border-bottom: none;
+  }
+
+  ul.navmain a:active {
+    color: black;
+    background-color: #eee;
+  }
+  
+} /* Ende @media – nicht löschen! */
+
+/* ======================================
+   E N D E 
+====================================== */ 

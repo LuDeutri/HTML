@@ -1,0 +1,185 @@
+/* =====================================================
+
+  Stylesheet für die Beispielsite aus "Einstieg in CSS"
+  Datei: oldie.css
+  Datum: ...
+  Autor: ...
+  
+========================================================== */
+
+@media screen {
+
+  /* Breite für den Wrapper auf dem Desktop */
+  div#wrapper {
+    width: 720px;
+    margin: 10px auto;
+  }
+
+  /* Inhalte für den Desktop gestalten */
+  p.slogan {
+    position:absolute;
+    top: 10px;
+    right: 20px;
+  }
+  
+  .menu { display: none; } 
+  
+  #navibereich {
+    position: relative;  
+    background-color: #fee05a; 
+    background-image: linear-gradient(to bottom, #fee05a, #f4c600); 
+    padding: 0; 
+    padding-left: 20px; 
+    padding-right: 180px; 
+    margin: 0; 
+  }
+  #navibereich > h2 {
+    position: absolute; 
+    top: -32768px; 
+    left: -32768px; 
+    width: 0; 
+    height: 0; 
+  }
+  
+  /* ======================================
+   Hauptnavigation gestalten
+   ====================================== */
+  
+  ul.navmain { 
+    padding: 0; 
+    margin: 0; 
+  }
+  
+  ul.navmain li {
+    float: left; 
+    width: auto; 
+    list-style: none; 
+    line-height: 1; 
+    padding: 0; 
+    margin: 0; 
+  }
+  
+  ul.navmain a:link,
+  ul.navmain a:visited {
+    color: black; 
+    display: block; 
+    padding: 7px 10px; 
+    text-decoration: none; 
+  }
+  
+  ul.navmain a:hover,
+  ul.navmain a:focus {
+    background-color: #f3c600; 
+    background-image: linear-gradient(to bottom, #f7d337, #fff2c1); 
+    border-bottom: none; 
+    color: black; 
+    text-decoration: underline; 
+  }
+  
+  ul.navmain a:active {
+    background: #b80000; 
+    color: white; 
+  }
+  
+  ul.navmain .sie-sind-hier {
+    background-color: #ffeda0; 
+    background-image: linear-gradient(to bottom, #f7d337, #fff2c1); 
+    color: black; 
+    font-weight: normal; 
+    text-decoration: none; 
+  }
+  
+  /* ======================================
+   Dropdown-Navigation
+   ====================================== */
+
+  /* Schritt 1 – zweite Ebene li clearen */
+  
+  ul.navmain ul.level2 {
+    padding: 0; 
+    margin: 0; 
+  }
+  
+  ul.navmain ul.level2 li { 
+    clear: both; 
+  }
+
+  /* Schritt 2 – Zweite Ebene verstecken */
+  
+  ul.navmain ul.level2 {
+    position: absolute;
+    left: -32768px;
+    top: -32768px;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+
+  /* Schritt 3 – Zweite Ebene wieder einblenden */
+  
+  ul.navmain li:hover ul.level2 {
+    left: auto;
+    top: auto;
+    display: block;
+    width: auto;
+    height: auto;
+    border-bottom: 2px solid #f3c600;
+  }
+
+  /* Schritt 4 – Links in der zweiten Ebene gestalten */
+  
+  ul.navmain ul.level2 a {
+    background: #fff3c0;
+    color: black;
+    min-width: 6em;
+  }
+  ul.navmain ul.level2 a:active {
+    background: #b80000;
+    color: white;
+  }
+
+} /* Ende @media - nicht löschen! */
+
+  /* ======================================
+   Suchformular gestalten
+   ====================================== */
+  
+  .suchformular label {
+    position: absolute;
+    left: -32768px;
+    top: -32768px;
+    width: 0;
+    height: 0;
+  }
+ 
+  .suchformular {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+  }
+  
+  .suchformular input[type="text"] {
+    width: 100px; 
+    font-size: 11px; 
+    border: none;
+    border-radius: 4px;
+    padding: 3px 25px 3px 9px;
+    margin: 0; 
+  }
+  .suchformular input.lupe {
+    position: absolute;
+    right: 7px;
+    top: 3px;
+    padding: 0;
+    margin: 0;
+  }
+
+
+
+
+} /* Ende @media – nicht löschen! */
+
+
+/* ======================================
+   E N D E  
+====================================== */

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+
+
+<head> <!-- Im Head stehen Informationen über die Website-->
+     <meta charset="utf-8">
+	 <title>Kontaktseite - Little Boxes (Webseiten gestalten mit HTML und CSS)</title>
+	 <meta name="description" content="Kontaktfomular für Little Boxes.">
+	 <meta name="viewport" content="width=device-width">
+     
+	 <link href="favicon.ico" rel="shortcut icon">
+	 <link href="zentrale.css" rel="stylesheet"> <!-- Traditional ist ein gespeicherter Stylsheet, weitere: Midnight, Ultramarine, Chocolate, Oldstyle, Modernist, Steely, Swiss -->
+	 
+</head>
+
+<body>
+     <div id="wrapper">
+	 
+	 
+	     <div id="kopfbereich">
+	         <h1><img src="little-boxes-logo.gif" id="logo" alt="Little Boxes" width="222" height="32"</h1> <!-- alt= gibt einen Text an, der angezeigt werden soll, wenn das Bild nicht lädt-->
+	         <p id="slogan">Websiten gestalten mit HTML und CSS. <span>Grundlagen.</span></p>
+	 
+	     </div> <!-- Ende kopfbereich-->
+	     <div id="navibereich">
+		     <ul>
+			     <li><a href="index.html">Startseite</a></li>
+				 <li><a href="galerie.html">Galerie</a></li>
+				 <li class="sie-sind-hier"><a href="kontakt.html">Kontakt</a></li>
+	         </ul>
+	 
+	     </div> <!-- Ende navibereich-->
+	     <div id="textbereich">
+	         <h2>Kontaktseite</h2>
+	 
+	         <form id="kontaktformular" action="http://www.formular-chef.de/fc.cgi" method="post" enctype="multipart/form-data">  <!-- Bei action= muss der Webdpace angegeben werden -->
+			     <div>
+			         <label for="besuchername">Ihr Name:</label>
+				     <input type="text" id="besuchername" name="besuchername" required>  <!-- required verhindert, dass das Feld unausgefüllt abgesendet wird-->
+			     </div>
+			     <div>
+			         <label for="beuschermail">Ihre Email:</label>
+				     <input type="email" id="besuchermail" name="besuchermail" required>  <!-- neber type="email" gibt es auch: "tel" für Telenummern , "url" für Links -->
+			     </div>
+			     <div>
+			         <label for="naricht">Ihre Naricht:</label>
+			         <textarea id="naricht" name="naricht" cols="20" rows="5"></textarea>   <!-- cols= spalten, rows= Zeilen-->
+			     </div>
+			     <div>
+			         <input type="submit" value="Abschicken">
+			     </div>
+			 </form>
+			 
+		 <input type="hidden" name="empfaenger" value="lucadeutrich1X§Xgmail.com  <!-- Muss direkt nach dem <form> tag stehen! X§X ist besser als @ aufgrund von fehlern bei browsern-->
+	 
+	     </div> <!-- Ende textbereich-->
+	     <div id="fussbereich">
+	         <address>
+			     Little Boxes &middot; Kästchenweg 12 &middot; 01234 Boxberg <!-- & = und-zeichen: gibt an dass ein symbol folgt. middot ist ein punkt mitten in der Zeile. Auch gehen würde z.b. &euro usw. da manche Browser die Symbole nach normaler eingabe nicht richtig anzeigen, so ists sicher.-->
+				 <br>
+				 Tel: 01234 567890 &middot; Fax: 01234 567891
+			 </address>
+	 
+	     </div> <!-- Ende fussbereich-->
+	 </div> <!-- Ende wrapper-->
+	 
+</body>
+
+
+</html>

@@ -1,0 +1,98 @@
+/* Stylesheet für die Beispielsite aus "Einstieg in CSS" */
+
+* { padding: 0; margin: 0; }
+html { overflow-y: scroll; } 
+article, aside, details, figcaption, figure, footer, 
+header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+
+body {
+  background-color: #8c8c8c; 
+  background-image: url(hintergrund.png); 
+  color: white; 
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 87.5%; 
+}
+
+div#wrapper {
+  background-color: white;
+  color: black;
+  width: 720px; 
+  margin: 10px auto; 
+}
+
+header#kopfbereich {
+  background-color: #f3c600; 
+  color: black;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 0;
+  padding-left: 20px;
+}
+
+nav#navibereich { 
+  padding-top: 5px ;
+  padding-right: 20px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+}
+
+main#inhaltsbereich { 
+  padding-top: 20px ;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+} 
+
+
+img.logo { 
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border: 10px solid #d9d9d9;
+}
+
+address {
+  text-align: center;  
+  font-size: 85%;      
+  font-style: normal;  
+  letter-spacing: 2px; 
+  line-height: 1.5;    
+}
+
+a { text-decoration: none; } 
+main a { 
+  text-decoration: underline; 
+} 
+
+a:link { color: #d90000; }
+a:visited { color: #cc6666; } 
+a:hover, a:focus { text-decoration: none; }
+a:active {
+  background-color: #d90000;
+  color: white;
+}
+
+p.slogan span { color: #d90000; }
+
+/* Wiederherstellung der Abstände wegen Reset */ 
+h2, p, ul, ol, blockquote { margin-bottom: 1em; }
+
+/* Abstand von links */
+ul, ol { margin-left: 2em; } 
+
+/* Verschachtelte Listen ohne Abstand */
+ul ul, ul ol, ol ol, ol ul { margin-bottom: 0; }
+
+footer#fussbereich {
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+
+  border-top: 1px solid #8c8c8c;
+  margin-top: 0;   /* war 20px */
+} 
+

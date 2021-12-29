@@ -1,0 +1,44 @@
+/*Floats sorgen dafür, dass z.b. ein Bild sich von dem übrigen Fluss löst, der Text dabei jedoch um das Objekt herum fließt, sodass es zu keinen überschneidungen kommt.
+Hierbei kann man einstellen, wie das Bild aussehen soll, ihm z.b. einen Rahmen verpassen und anschließend in welche Richtung es sich aus dem Fluss herauslösen soll. Also
+ob es rechts oder links vom Text stehen soll. Hier bietet es sich an mehrere classes anzufertigen, eine nach rechts eine nach links und eine für das design. So kann man bei 
+weiteren betroffenen elementen einfach die classe angeben und muss nicht alles nochmal eintippen. */
+
+
+
+.bilderrahmen{
+	 padding: 3px;
+	 border: 5px solid #ccc;
+	 border-radius: 5px;
+}
+
+.floatlinks{
+	 float:left;
+	 margin-right: 10px;
+	 margin-bottom: 10px;
+}
+
+.floatrechts{
+	 float:right;
+	 margin-left: 10px;
+	 margin-bottom: 10px;
+}
+
+
+
+/* Das Bild beginnt hierbei immer auf der höhe des tags in dem es steht, nach unten hin ist es jedoch nicht begrenzt, weshalb es vorkommen kann, dass sich ein Bild über mehrere
+tags erstreckt. Um das zu verhindern nutzt man "clear". Hiermit beendet man den float und befiehlt dem nächsten Element somit, nicht neber dem Bild entlang zu fließen sondern erst darunter
+zu beginnen. Auf diese Weise entsteht ein Freiraum.
+clear:left beendet foat:left
+clear:right beendet float:right
+
+und clear:both beendet beides.
+
+Es ist daher nicht verkehrt gleich clear:both zu nutzen und eine Classe zu erstellen, die man dann wieder einfach an das entsprechende bild anfügt.*/
+
+.clearing{clear:both;}
+
+/* Allerdings umschließt der Float oft nicht die ganze Grafik deshalb gibt es 5 Methoden diese doch zu umschließen.
+ (siehe C:\Users\Luca\Desktop\HTML\Einstieg in CSS - Buch\beispieldateien\k18-float-containing) */
+ 
+ /*(In Floats-umschliessen.html wird die 5. Methode angewendet)*/
+ 

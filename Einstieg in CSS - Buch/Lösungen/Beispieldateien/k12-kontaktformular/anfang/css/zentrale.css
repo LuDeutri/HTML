@@ -1,0 +1,22 @@
+/* =======================================================
+   
+   Zentrales Stylesheet – wird im <head> der Webseiten eingebunden
+   
+   Datei: css/zentrale.css
+   Datum: ...
+   Autor: ...
+   
+========================================================== */
+
+
+@import url(reset.css);
+
+@import url(bildschirm.css);
+
+/* @import url(navi-inline.css); */
+@import url(navi-tabs.css); 
+
+
+/* ======================================
+   E N D E 
+====================================== */

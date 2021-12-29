@@ -1,0 +1,49 @@
+/*==================================================================================================================================
+ Stylesheet für die Beispielsite aus "Einstieg in CSS"
+ Datei: navi-floats-vertikal.css
+ Datum: 06.11.16
+ Autor: Luca Deutrich
+===================================================================================================================================*/
+
+@media screen and (min-width:768px){
+	
+div#navibereich{
+	 float: left;
+	 width: 110px;
+	 padding-left: 20px;
+	 padding-top: 20px;
+}
+
+div#textbereich{
+	 margin-left: 130px;
+}
+
+#navibereich ul{
+	 width: 6em;
+	 padding: 0;
+	 border-top: 1px solid #d90000;
+	 margin: 0;
+}
+
+#navibereich li{
+	 list-style-type: none;
+	 border-left: 1px solid #d90000;
+	 border-bottom: 1px solid #d90000;
+     margin: 0;
+}
+
+#navibereich a{
+	 display: block;
+	 text-decoration: none;
+	 color: black;
+	 background-color: #eee;
+	 padding: 4px;
+	 border-left: 3px solid #eee;
+}
+
+
+} /* Ende @media*/
+
+/*==================================================================================================================================
+E N D E navi-floats-vertikal.css
+==================================================================================================================================*/
